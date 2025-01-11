@@ -1,0 +1,118 @@
+.home{
+    position: relative;
+    top: -115px;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/download.webp');
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    color: var(--secondary);
+}
+
+.hero h1{
+    text-shadow: 1px 1px 6px black;
+    font-size: 5rem;
+}
+
+.hero p{
+    text-shadow: 1px 1px 5px black;
+    font-size: 2rem;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 10rem;
+    gap: 5rem;
+}
+
+.features h1{
+    position: relative;
+    font-size: 3.5rem;
+    opacity: 0;
+    color: var(--secondary);
+    scale: .5;
+    margin-bottom: 10rem;
+    text-shadow: 1px 1px 3px black;
+    animation: fadein linear forwards;
+    animation-timeline: view(10%);
+}
+
+.feature{
+    position: relative;
+    opacity: 0;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    transition: all 0.3s;
+    animation: slideup linear forwards;
+    animation-timeline: view(90% 5%);
+}
+
+.feature:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.feature .content{
+    text-align: center;
+    width: 50%;
+}
+
+.feature img{
+    width: 50%;
+    scale: .5;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    animation: zoom linear forwards;
+    animation-timeline: view(90% 5%);
+}
+
+.cta-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-section h2{
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+    color: var(--secondary);
+}
+
+@keyframes fadein{
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes slideup {
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes zoom{
+    100%{
+        scale: 1;
+    }
+}

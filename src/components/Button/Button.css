@@ -1,0 +1,15 @@
+.button{
+    color: var(--primary);
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 9999px;
+    box-shadow: 2px 2px 12px black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    scale: 1.2;
+    background-color: var(--primary);
+    color: var(--secondary);
+}

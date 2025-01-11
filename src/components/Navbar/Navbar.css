@@ -1,0 +1,51 @@
+.navbar{
+    position: relative;
+    width: 100vw;
+    z-index: 1000;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.navbar .logo a{
+    -webkit-text-stroke: 0.01px var(--secondary);
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar a{
+    text-shadow: 1px 1px 6px black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.navbar .links a{
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbar .links a:hover{
+    scale: 1.1;
+    color: var(--secondary);
+}
+
+.navbar .auth{
+    display: flex;
+    gap: 1rem;
+}
